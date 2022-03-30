@@ -34,4 +34,4 @@ app.use((req, res, next) => {
 //   res.status(err.status || 500);
 //   res.json(error);
 // });
-app.listen(port, () => cl("connect success"));
+app.listen(port, () => cl(`connect port ${port} successfully`));
