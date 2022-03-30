@@ -6,7 +6,7 @@ const option = {
 };
 
 let mongoDB = `${process.env.SRV}${process.env.USERNAME}:${process.env.PASSWORD}@${process.env.HOST}/${process.env.DB}?retryWrites=true&w=majority`;
-mongoose.connect(mongoDB, { useNewUrlParser: true });
+
 const db = mongoose
   .connect(mongoDB, option)
   .then((res) => {
